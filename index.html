@@ -20,7 +20,8 @@
     </div>
 
     <div class="bottom">
-      <button class="botãoinferior"><h1>Selecione os 3 itens<br> para fechar o pedido</h1></button>
+      <button class="botãoinferior" disabled><h1>Selecione os 3 itens<br> para fechar o pedido</h1></button>
+      <a href="https://wa.me/5521988719876?text=Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda"><button class="botãoverde esconder"><h1>Finalize seu pedido!</h1></button></a>
     </div>
 
     <div class="menu">
@@ -29,23 +30,25 @@
 
       <div class="comida">
 
-        <button class="strogonoff" onclick="selecionarComida('strogonoff'); final()">
+        <button class="strogonoff" onclick="selecionarComida('strogonoff'); pisca(); final()">
           <div class="opção">
             <img class="item" src="strogonoff.png"/>
             <h1>Strogonoff</h1>
             <h2>Strogonoff de frango com batata palha.</h2>
             <p>R$ 20,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
         
       <span></span>
 
-        <button class="hamburguer" onclick="selecionarComida('hamburguer'); final()">
+        <button class="hamburguer" onclick="selecionarComida('hamburguer'); pisca(); final()">
           <div class="opção">
             <img class="item" src="burg.jpg"/>
             <h1>Hamburgão</h1>
             <h2>X-tudo completão. Acompanha batata.</h2>
             <p>R$ 14,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -57,6 +60,7 @@
             <h1>Churrascão</h1>
             <h2>Churrasco completo. Serve 2 pessoas.</h2>
             <p>R$ 30,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -68,6 +72,7 @@
             <h1>Peixe Frito</h1>
             <h2>Peixe frito com limão, alface e cebola.</h2>
             <p>R$ 27,50</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button> 
 
@@ -85,6 +90,7 @@
             <h1>Guaraná Antarctica</h1>
             <h2>Lata de 390ml.</h2>
             <p>R$ 3,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -96,6 +102,7 @@
             <h1>Água Mineral</h1>
             <h2>Garrafa de 500ml.</h2>
             <p>R$ 2,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -107,6 +114,7 @@
             <h1>Cerveja Heineken</h1>
             <h2>Garrafa de 330ml.</h2>
             <p>R$ 4,89</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -118,6 +126,7 @@
             <h1>Smirnoff Vodka</h1>
             <h2>Smirnoff Vodka 998ml.</h2>
             <p>R$ 34,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -135,6 +144,7 @@
             <h1>Bolo de Pote</h1>
             <h2>Bolo de pote em diversos sabores.</h2>
             <p>R$ 5,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -146,6 +156,7 @@
             <h1>Picolé</h1>
             <h2>Picolé caseiro. Temos vários sabores.</h2>
             <p>R$ 2,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -157,6 +168,7 @@
             <h1>Pudim</h1>
             <h2>Pudim de doce de leite com calda.</h2>
             <p>R$ 18,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
 
@@ -168,11 +180,13 @@
             <h1>Torta de Limão</h1>
             <h2>Torta caseira sabor limão.</h2>
             <p>R$ 29,90</p>
+            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
           </div>
         </button>
     </div>
 
     </div>
   <script src="scripts.js"></script>
+  <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
 </html>
