@@ -155,3 +155,14 @@ span{
     font-size:20px;
     font-weight: 400;
 }
+
+.botãoverde{
+    height:61px;
+    width: 364px;
+    border-radius:50px;
+    background-color: #32b72f;
+    margin-left: 25px;
+    margin-top:15.5px;
+    text-align: center;
+}
+
