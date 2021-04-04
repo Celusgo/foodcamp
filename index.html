@@ -20,94 +20,155 @@
     </div>
 
     <div class="menu">
-
+      
       <p class="categoria">Primeiro, seu prato</p>
+
       <div class="comida">
+
+        <button class="strogonoff" onclick="selecionarComida('strogonoff')">
           <div class="opção">
             <img class="item" src="strogonoff.png"/>
             <h1>Strogonoff</h1>
             <h2>Strogonoff de frango com batata palha.</h2>
             <p>R$ 20,90</p>
           </div>
+        </button>
+        
+      <span></span>
+
+        <button class="hamburguer" onclick="selecionarComida('hamburguer')">
           <div class="opção">
             <img class="item" src="burg.jpg"/>
             <h1>Hamburgão</h1>
             <h2>X-tudo completão. Acompanha batata.</h2>
             <p>R$ 14,90</p>
           </div>
+        </button>
+
+      <span></span>
+
+        <button class="churrasco" onclick="selecionarComida('churrasco')">
           <div class="opção">
             <img class="item" src="churras.jpg"/>
             <h1>Churrascão</h1>
             <h2>Churrasco completo. Serve 2 pessoas.</h2>
             <p>R$ 30,90</p>
           </div>
+        </button>
+
+      <span></span>
+          
+        <button class="peixe" onclick="selecionarComida('peixe')">
           <div class="opção">
             <img class="item" src="peixe.jpg"/>
             <h1>Peixe Frito</h1>
             <h2>Peixe frito com limão, alface e cebola.</h2>
             <p>R$ 27,50</p>
           </div>
+        </button> 
+
       </div>
 
 
 
       <p class="categoria">Agora, sua bebida</p>
+
       <div class="bebida">
-        <div class="opção">
-          <img class="item" src="guarana.jpg"/>
-          <h1>Guaraná Antarctica</h1>
-          <h2>Lata de 390ml.</h2>
-          <p>R$ 3,90</p>
-        </div>
-        <div class="opção">
-          <img class="item" src="agua.jpg"/>
-          <h1>Água Mineral</h1>
-          <h2>Garrafa de 500ml.</h2>
-          <p>R$ 2,90</p>
-        </div>
-        <div class="opção">
-          <img class="item" src="cerveja.png"/>
-          <h1>Cerveja Heineken</h1>
-          <h2>Garrafa de 330ml.</h2>
-          <p>R$ 4,89</p>
-        </div>
-        <div class="opção">
-          <img class="item" src="vodka.jpg"/>
-          <h1>Smirnoff Vodka</h1>
-          <h2>Smirnoff Vodka 998ml.</h2>
-          <p>R$ 34,90</p>
-        </div>
+        
+        <button class="guarana" onclick="selecionarBebida('guarana')"">
+          <div class="opção">
+            <img class="item" src="guarana.jpg"/>
+            <h1>Guaraná Antarctica</h1>
+            <h2>Lata de 390ml.</h2>
+            <p>R$ 3,90</p>
+          </div>
+        </button>
+
+      <span></span>
+        
+        <button class="agua" onclick="selecionarBebida('agua')">
+          <div class="opção">
+            <img class="item" src="agua.jpg"/>
+            <h1>Água Mineral</h1>
+            <h2>Garrafa de 500ml.</h2>
+            <p>R$ 2,90</p>
+          </div>
+        </button>
+
+      <span></span>
+
+        <button class="cerveja" onclick="selecionarBebida('cerveja')">
+          <div class="opção">
+            <img class="item" src="cerveja.png"/>
+            <h1>Cerveja Heineken</h1>
+            <h2>Garrafa de 330ml.</h2>
+            <p>R$ 4,89</p>
+          </div>
+        </button>
+
+      <span></span>
+       
+        <button class="vodka" onclick="selecionarBebida('vodka')">
+          <div class="opção">
+            <img class="item" src="vodka.jpg"/>
+            <h1>Smirnoff Vodka</h1>
+            <h2>Smirnoff Vodka 998ml.</h2>
+            <p>R$ 34,90</p>
+          </div>
+        </button>
+
     </div>
 
 
 
-    <p class="categoria">Por fim, sua sobremesa</p>
-    <div class="sobremesa">
-      <div class="opção">
-        <img class="item" src="bolo.jpg"/>
-        <h1>Bolo de Pote</h1>
-        <h2>Bolo de pote em diversos sabores.</h2>
-        <p>R$ 5,90</p>
-      </div>
-      <div class="opção">
-        <img class="item" src="picole.jpg"/>
-        <h1>Picolé</h1>
-        <h2>Picolé caseiro. Temos vários sabores.</h2>
-        <p>R$ 2,90</p>
-      </div>
-      <div class="opção">
-        <img class="item" src="pudim.jpg"/>
-        <h1>Pudim</h1>
-        <h2>Pudim de doce de leite com calda.</h2>
-        <p>R$ 18,90</p>
-      </div>
-      <div class="opção">
-        <img class="item" src="limão.jpg"/>
-        <h1>Torta de Limão</h1>
-        <h2>Torta caseira sabor limão.</h2>
-        <p>R$ 29,90</p>
-      </div>
+      <p class="categoria">Por fim, sua sobremesa</p>
+
+      <div class="sobremesa">
+
+        <button class="bolo" onclick="selecionarSobremesa('bolo')">
+          <div class="opção">
+            <img class="item" src="bolo.jpg"/>
+            <h1>Bolo de Pote</h1>
+            <h2>Bolo de pote em diversos sabores.</h2>
+            <p>R$ 5,90</p>
+          </div>
+        </button>
+
+      <span></span>
+    
+        <button class="picole" onclick="selecionarSobremesa('picole')">
+          <div class="opção">
+            <img class="item" src="picole.jpg"/>
+            <h1>Picolé</h1>
+            <h2>Picolé caseiro. Temos vários sabores.</h2>
+            <p>R$ 2,90</p>
+          </div>
+        </button>
+
+      <span></span> 
+
+        <button class="pudim" onclick="selecionarSobremesa('pudim')">
+          <div class="opção">
+            <img class="item" src="pudim.jpg"/>
+            <h1>Pudim</h1>
+            <h2>Pudim de doce de leite com calda.</h2>
+            <p>R$ 18,90</p>
+          </div>
+        </button>
+
+      <span></span>
+
+        <button class="torta" onclick="selecionarSobremesa('torta')">
+          <div class="opção">
+            <img class="item" src="limão.jpg"/>
+            <h1>Torta de Limão</h1>
+            <h2>Torta caseira sabor limão.</h2>
+            <p>R$ 29,90</p>
+          </div>
+        </button>
     </div>
-    </div>    
+
+    </div>
+  <script src="scripts.js"></script>    
 </body>
 </html>
