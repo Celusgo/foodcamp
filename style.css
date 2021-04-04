@@ -6,7 +6,7 @@ body{
 button{
     padding: 0;
     border: none;
-    
+    outline: none;
     background: none;
     text-align: left;
     box-sizing: content-box;   
@@ -71,6 +71,7 @@ button{
     justify-content: space-evenly;
     width:172px;
     background-color: #ffffff;
+    border:4px solid #ffffff; 
     border-radius:9px;
     padding-left:14px;
     padding-bottom:20px;
@@ -191,6 +192,22 @@ span{
 }
 
 ion-icon{
-    color:#32b72f;
-    font-size:20.5px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 22px;
+    color: #32B72F;
+    display: none;
+}
+
+.selected1 ion-icon{
+    display:block;
+}
+
+.selected2 ion-icon{
+    display:block;
+}
+
+.selected3 ion-icon{
+    display:block;
 }

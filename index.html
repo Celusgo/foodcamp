@@ -15,13 +15,14 @@
 </head>
 <body>
     <div class="topo">
-        <h1>FoodCamp</h1>
+        <h1>
+FoodCamp</h1>
         <h2>Sua comida em 6 minutos</h2>
     </div>
 
     <div class="bottom">
       <button class="botãoinferior" disabled><h1>Selecione os 3 itens<br> para fechar o pedido</h1></button>
-      <a href="https://wa.me/5521988719876?text=Eu%20tenho%20interesse%20no%20seu%20carro%20à%20venda"><button class="botãoverde esconder"><h1>Finalize seu pedido!</h1></button></a>
+      <button class="botãoverde esconder" onclick="acabou()"><h1>Finalize seu pedido!</h1></button>
     </div>
 
     <div class="menu">
@@ -29,26 +30,25 @@
       <p class="categoria">Primeiro, seu prato</p>
 
       <div class="comida">
-
-        <button class="strogonoff" onclick="selecionarComida('strogonoff'); pisca(); final()">
-          <div class="opção">
+        <button class="strogonoff" onclick="selecionarComida('strogonoff'); final()">
+          <div class="opção ">
             <img class="item" src="strogonoff.png"/>
-            <h1>Strogonoff</h1>
+            <h1 class="food">Strogonoff</h1>
             <h2>Strogonoff de frango com batata palha.</h2>
-            <p>R$ 20,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 20,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
         
       <span></span>
 
-        <button class="hamburguer" onclick="selecionarComida('hamburguer'); pisca(); final()">
+        <button class="hamburguer" onclick="selecionarComida('hamburguer'); final()">
           <div class="opção">
             <img class="item" src="burg.jpg"/>
-            <h1>Hamburgão</h1>
+            <h1 class="food">Hamburgão</h1>
             <h2>X-tudo completão. Acompanha batata.</h2>
-            <p>R$ 14,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 14,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -57,10 +57,10 @@
         <button class="churrasco" onclick="selecionarComida('churrasco'); final()">
           <div class="opção">
             <img class="item" src="churras.jpg"/>
-            <h1>Churrascão</h1>
+            <h1 class="food">Churrascão</h1>
             <h2>Churrasco completo. Serve 2 pessoas.</h2>
-            <p>R$ 30,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 30,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -69,10 +69,10 @@
         <button class="peixe" onclick="selecionarComida('peixe'); final()">
           <div class="opção">
             <img class="item" src="peixe.jpg"/>
-            <h1>Peixe Frito</h1>
+            <h1 class="food">Peixe Frito</h1>
             <h2>Peixe frito com limão, alface e cebola.</h2>
-            <p>R$ 27,50</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 27,50</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button> 
 
@@ -87,10 +87,10 @@
         <button class="guarana" onclick="selecionarBebida('guarana'); final()">
           <div class="opção">
             <img class="item" src="guarana.jpg"/>
-            <h1>Guaraná Antarctica</h1>
+            <h1 class="drink">Guaraná Antarctica</h1>
             <h2>Lata de 390ml.</h2>
-            <p>R$ 3,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 3,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -99,10 +99,10 @@
         <button class="agua" onclick="selecionarBebida('agua'); final()">
           <div class="opção">
             <img class="item" src="agua.jpg"/>
-            <h1>Água Mineral</h1>
+            <h1 class="drink">Água Mineral</h1>
             <h2>Garrafa de 500ml.</h2>
-            <p>R$ 2,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 2,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -111,10 +111,10 @@
         <button class="cerveja" onclick="selecionarBebida('cerveja'); final()">
           <div class="opção">
             <img class="item" src="cerveja.png"/>
-            <h1>Cerveja Heineken</h1>
+            <h1 class="drink">Cerveja Heineken</h1>
             <h2>Garrafa de 330ml.</h2>
-            <p>R$ 4,89</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 4,89</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -123,10 +123,10 @@
         <button class="vodka" onclick="selecionarBebida('vodka'); final()">
           <div class="opção">
             <img class="item" src="vodka.jpg"/>
-            <h1>Smirnoff Vodka</h1>
+            <h1 class="drink">Smirnoff Vodka</h1>
             <h2>Smirnoff Vodka 998ml.</h2>
-            <p>R$ 34,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 34,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -141,10 +141,10 @@
         <button class="bolo" onclick="selecionarSobremesa('bolo'); final()">
           <div class="opção">
             <img class="item" src="bolo.jpg"/>
-            <h1>Bolo de Pote</h1>
+            <h1 class="dessert">Bolo de Pote</h1>
             <h2>Bolo de pote em diversos sabores.</h2>
-            <p>R$ 5,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 5,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -153,10 +153,10 @@
         <button class="picole" onclick="selecionarSobremesa('picole'); final()">
           <div class="opção">
             <img class="item" src="picole.jpg"/>
-            <h1>Picolé</h1>
+            <h1 class="dessert">Picolé</h1>
             <h2>Picolé caseiro. Temos vários sabores.</h2>
-            <p>R$ 2,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 2,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -165,10 +165,10 @@
         <button class="pudim" onclick="selecionarSobremesa('pudim'); final()">
           <div class="opção">
             <img class="item" src="pudim.jpg"/>
-            <h1>Pudim</h1>
+            <h1 class="dessert">Pudim</h1>
             <h2>Pudim de doce de leite com calda.</h2>
-            <p>R$ 18,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 18,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
 
@@ -177,10 +177,10 @@
         <button class="torta" onclick="selecionarSobremesa('torta'); final()">
           <div class="opção">
             <img class="item" src="limão.jpg"/>
-            <h1>Torta de Limão</h1>
+            <h1 class="dessert">Torta de Limão</h1>
             <h2>Torta caseira sabor limão.</h2>
-            <p>R$ 29,90</p>
-            <div class="check esconder"><ion-icon name="checkmark-circle"></ion-icon></div>
+            <p class="price">R$ 29,90</p>
+            <ion-icon name="checkmark-circle"></ion-icon>
           </div>
         </button>
     </div>
