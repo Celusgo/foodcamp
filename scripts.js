@@ -78,6 +78,8 @@ function final(){
 }
 
 function acabou(){
+    const nomeCliente = prompt("Escreva seu nome:");
+    const enderecoCliente = prompt("Escreva seu endereço");
     precoComida = precoComida.replace("R$ ","");
     precoComida = precoComida.replace(",",".");
     precoComida = parseFloat(precoComida);
@@ -93,7 +95,10 @@ function acabou(){
     - Prato: ${escolhaComida}
     - Bebida: ${escolhaBebida}
     - Sobremesa: ${escolhaSobremesa}
-    Total: R$ ${precoTotal}`;
+    Total: R$ ${precoTotal}
+    
+    Nome: ${nomeCliente}
+    Endereço: ${enderecoCliente}`;
     const textoconvertido = encodeURI(mensagem);
     const link = `https://wa.me/5521988719876?text=${textoconvertido}`;
     window.location.href = link; 
