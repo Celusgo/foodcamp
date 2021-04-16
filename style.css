@@ -211,3 +211,24 @@ ion-icon{
 .selected3 ion-icon{
     display:block;
 }
+
+.revisarpedido{
+    display:flex;
+    justify-content: center;
+    height:353px;
+    width:377px;
+    position:fixed;
+    top:calc((100% - 353px)/2);
+    background-color:#50d074;
+    z-index:5;
+    border-radius:9px;
+}
+
+.revisarpedido p{
+    font-family: 'Roboto';
+    font-size:22px;
+    color:#ffffff;
+    margin:21px;
+    font-weight:600;
+}
+
